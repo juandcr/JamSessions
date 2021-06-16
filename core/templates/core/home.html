@@ -6,15 +6,26 @@
 {% block content%}
 <div class="container-fluid">
 
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <h1 class="text-center">EL LUGAR PERFECTO PARA ESCUCHAR TU VOZ</h1>
+    <div class="row h-100">
+        <div class="col-sm-12 col-md-6 col-lg-6 my-auto">
+            <div class="rectangle text-center">
+                <p class=" left-title-main">EL LUGAR PERFECTO <br> PARA ESCUCHAR TU VOZ</p>
+                <p class="spotify-link"><i class="fab fa-spotify"></i> Escúchanos</p>
+            </div>
+            
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="{static 'core/img/'}"></img>
+        <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <div>
+                <img src="{% static 'core/img/logos/test.jpg' %}" class="img-fluid" ></img>
+            </div>
+            
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-12 text-center mt-5">
+            <p class="section-orange-text">REPRODUCE LA MÁGIA DE NUESTRO SONIDO</p>
+        </div>
+    </div>
 </div>
 
 {% endblock%}

@@ -1,6 +1,10 @@
 html *{
     font-family: 'Voltaire', sans-serif !important;
     color: #E6E6E6;
+    
+}
+
+body{
     background-color: #1A1A1A;
 }
 
@@ -24,6 +28,51 @@ html *{
 .dropdown-menu li{    
     font-size: 0.5em;    
 }
+.spotify-footer-icon{
+    font-size: 2em !important;
+}
+.spotify-footer-text{
+    font-size: 1.5em !important;
+}
+.footer-hr{    
+    height: 10px !important;
+    color: #F6921E;
+    opacity: 100%;
+}
+.left-title-main{
+    position:relative;
+    padding-top: 0.5%;    
+    font-size: 5em;
+    line-height: 90%;
+}
+.rectangle{
+    margin-top: 5em;
+    background-color: #F6921E;
+    width: 90%;
+    height: 100px;
+    float: right;
+}
+.fab{
+    font-family: "Font Awesome 5 Brands" !important;
+}
+.fa, .far, .fas{
+    font-family: "Font Awesome 5 Free" !important;
+}
+.spotify-link{
+    font-size: 2em;
+    line-height: 2.5;
+}
+
+.footer-contact{
+    font-size: 1.3em;
+}
+
+.section-orange-text{
+    color:#F6921E;
+    font-size: 2em;
+
+}
+
 
 @media (min-width: 768px) { 
     
