@@ -1,0 +1,102 @@
+html *{
+    font-family: 'Voltaire', sans-serif !important;
+    color: #E6E6E6;
+    background-color: #1A1A1A;
+}
+
+.navbar-logo{
+    display: none ;    
+    text-align: left;
+    margin:auto;    
+    padding-left: 200px;
+    cursor: pointer;
+}
+
+.navbar ul{    
+    font-size: 1.5em;    
+}
+.bg-dark{
+    background-color: #1A1A1A !important;
+}
+.dropdown-menu {
+    background-color: #F6921E;
+}
+.dropdown-menu li{    
+    font-size: 0.5em;    
+}
+
+@media (min-width: 768px) { 
+    
+    .navbar ul{    
+        font-size: 2em;    
+    }
+}
+
+@media (min-width: 992px) { 
+    .navbar-logo{
+        width: 35%;
+        display: inline-block;
+        
+    }
+    .navbar ul{     
+        font-size: 1.5em;
+        padding-left: 60px;
+    }
+    .dropdown-menu li{        
+        font-size: 0.8em;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .nav-link{
+        padding-left: 25px !important;   
+        padding-right: 25px !important;  
+    }
+    .navbar-logo{
+        width: 40%;
+        display: inline-block;
+        
+    }
+    .navbar ul{     
+        font-size: 1.5em;
+        
+    }
+}
+
+
+@media (min-width: 1400px){
+    .navbar-logo{
+        width: 35%;
+        display: inline-block;
+        
+    }
+    .nav-link{
+        padding-left: 30px !important;   
+        padding-right: 30px !important;  
+    }
+
+    .navbar ul{     
+        font-size: 2em;        
+    }
+    .dropdown-menu li{        
+        font-size: 0.45em !important;
+    }
+
+}
+
+@media (min-width: 1582px){  
+    
+    .nav-link{
+        padding-left: 65px !important;   
+        padding-right: 65px !important;  
+    }
+    .navbar ul{        
+        font-size: 2em;        
+    }
+    
+    .dropdown-menu li{        
+        font-size: 0.8em;
+    }
+
+}
