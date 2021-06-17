@@ -73,9 +73,86 @@ body{
 
 }
 
+.light-background{
+    background-color: #E6E6E6 !important;
+    
+}
+.light-background h1{
+    color: #1A1A1A !important;
+}
+.light-background p{
+    color: #1A1A1A !important;
+    font-size: 2em;    
+}
+aside {
+    display: block;
+    position: relative;
+    margin: 40px 0;
+  }
+aside h1{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 50%;
+    margin-left: -25%;
+}
+aside div{
+    margin-left: 3em;        
+    background-color: #F6921E;
+    width: 30%;        
+    text-align: center;
+    
+}
+.comas{
+    font-size: 15em;
+    transform: rotate(-180deg);
+}
+
+.bg-1{  
+    background: url('../img/backgrounds/estudio_3.jpg') no-repeat center center ;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+.recolor{
+    background: rgba(246, 146, 30, 0.55);
+    overflow: hidden;    
+    z-index: -2;    
+    height: 800px;          
+}
+.center-div{    
+    padding: 250px 0;
+    text-align: center;
+    
+}
+.center-div h1{
+    font-size: 5em;    
+    -webkit-text-stroke: 2px black;
+}
+.center-div p{
+    font-size: 2em;
+    font-weight: lighter;
+    text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+.btn-white {
+    color: #1A1A1A;
+    background-color: #E6E6E6 !important;
+    border-color: #6c757d;
+    font-size: 1.5em;
+}
+
+.btn-white:hover {
+    color: #F6921E;        
+}
 
 @media (min-width: 768px) { 
-    
     .navbar ul{    
         font-size: 2em;    
     }
