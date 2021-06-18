@@ -138,8 +138,8 @@ aside div{
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-
 }
+
 
 .btn-white {
     color: #1A1A1A;
@@ -147,7 +147,9 @@ aside div{
     border-color: #6c757d;
     font-size: 1.5em;
 }
-
+audio{
+    width: 100% !important;
+}
 .btn-white:hover {
     color: #F6921E;        
 }
