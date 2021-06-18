@@ -152,6 +152,13 @@ aside div{
     color: #F6921E;        
 }
 
+footer .first-section-title{
+    font-size: 2em;
+}
+footer .first-section p{
+    font-size: 1.3em !important;
+}
+
 @media (min-width: 768px) { 
     .navbar ul{    
         font-size: 2em;    
