@@ -39,7 +39,7 @@ body{
     color: #F6921E;
     opacity: 100%;
 }
-.left-title-main{
+.title-main{
     position:relative;
     padding-top: 0.5%;    
     font-size: 5em;
@@ -51,6 +51,24 @@ body{
     width: 90%;
     height: 100px;
     float: right;
+}
+header{
+    align-items: center;
+}
+.container-header {    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle-header{
+    margin-top: 5em;
+    background-color: #F6921E;
+    width: 40%;
+    height: 100px;    
 }
 .fab{
     font-family: "Font Awesome 5 Brands" !important;
@@ -152,6 +170,16 @@ audio{
 }
 .btn-white:hover {
     color: #F6921E;        
+}
+.btn-orange{
+    background-color: #F6921E !important;
+    border-color:transparent;
+    font-size: 2em;
+}
+.btn-orange:hover{
+    background-color: black !important;
+    border-color: #F6921E;
+
 }
 
 footer .first-section-title{

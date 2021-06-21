@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Servicios{% endblock %}
+{% load static %}
+
+{% block content%}
+
+<div class="container-header mb-5">
+  <div class="rectangle-header text-center">
+    <p class="title-main">NOSOTROS <br> ESTUDIO DE GRABACIÓN</p>
+  </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-12 mt-5">            
+            <img src="{% static 'core/img/backgrounds/estudio_5.jpg' %}" class="img-fluid" >
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row  mt-4">        
+        <div class="col-sm-12 col-md-2 mt-5">
+            <aside>
+                <div>
+                    <h1>SOMOS MAS QUE <br>UN ESTUDIO</h1>
+                </div>
+                
+            </aside>            
+        </div>    
+        <div class="col-sm-12 col-md-10 mt-5 p-5">
+            <h1>In posuere mauris vitae mi pharetra blandit. Mauris congue lacus ipsum, in egestas ex fringilla a. Suspendisse nec porta elit, facilisis tincidunt nisi. Pellentesque quis arcu venenatis, accumsan eros fermentum, euismod ex. Sed lobortis metus finibus semper posuere. In eget fermentum lacus. Proin et risus eget nibh aliquet malesuada ut nec nisl. Etiam vehicula id urna eget sollicitudin. Morbi quis urna gravida risus tincidunt fringilla.</h1>                
+        </div>        
+    </div>
+</div>
+
+
+{% include 'core/contact_us.html' %}
+
+
+{% endblock %}

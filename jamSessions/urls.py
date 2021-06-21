@@ -19,5 +19,6 @@ from core import views as coreViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',coreViews.home,name='home')
+    path('',coreViews.home,name='home'),
+    path('nosotros',coreViews.about,name='about')
 ]
