@@ -90,11 +90,31 @@ header{
     font-size: 2em;
 
 }
-
-.light-background{
-    background-color: #E6E6E6 !important;
-    
+.services{
+    width: 18%;
+    padding: 3%;    
 }
+
+.light-background span{
+    font-size: 3.0em;
+    color: #1A1A1A;
+
+}
+.bullet{
+    width: 10%;
+    display: inline-block;
+}
+.s-details p{
+    font-size: 3em !important;
+}
+.services-detail{
+    width: 100%;
+    padding: 3em;
+}
+.light-background{
+    background-color: #E6E6E6 !important;    
+}
+
 .light-background h1{
     color: #1A1A1A !important;
 }
