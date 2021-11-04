@@ -8,12 +8,25 @@ body{
     background-color: #1A1A1A;
 }
 
+.header-mobile{
+    display: block;
+}
+.h-100{
+    display: none;
+}
 .navbar-logo{
     display: none ;    
     text-align: left;
     margin:auto;    
     padding-left: 200px;
     cursor: pointer;
+}
+
+.navbar-logo-mb{
+    display: none ;    
+    text-align: left;
+    margin:auto;        
+    cursor: pointer;    
 }
 
 .navbar ul{    
@@ -42,7 +55,7 @@ body{
 .title-main{
     position:relative;
     padding-top: 0.5%;    
-    font-size: 5em;
+    font-size: 2.4em;
     line-height: 90%;
 }
 .rectangle{
@@ -91,14 +104,101 @@ header{
 
 }
 .services{
+    
     width: 18%;
     padding: 3%;    
 }
 
-.light-background span{
-    font-size: 3.0em;
-    color: #1A1A1A;
 
+.title-wrapper{
+    background-color: #F6921E;
+    width: 100%;
+    padding:15px;
+}
+
+.basic-wrapper{
+    background-color: #F6921E;
+    width: 100%;
+}
+
+.service-title-wrapper{        
+    background-color: #F6921E;
+    width: 50%;
+    padding:15px;
+}
+
+.service-title-wrapper2{        
+    background-color: #F6921E; 
+    width: 100%;
+    padding: 5px; 
+}
+.service-title-wrapper3{        
+    background-color: #F6921E; 
+    width: 80%;
+    padding: 5px; 
+    color: #1A1A1A !important;
+}
+.service-price-wrapper{    
+    float: right;
+    padding-left: 5px;
+    background-color: #6c757d;    
+    width: 50%;
+}
+
+.service-price{
+    color: #E6E6E6;
+    font-size: 1em;
+}
+
+.card1{
+    background-color: #6c757d;
+}
+
+.card2{
+    background-color: #F6921E;
+}
+
+.card-text ul li {
+    color: #1A1A1A !important;
+}
+.card-text h5{
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+.mic{
+    height: 70%;
+    width: 100%;
+}
+.service-included-desc li{
+    color: #E6E6E6;
+    font-size: 1.2em !important;
+}
+.service-description{
+    color:#E6E6E6;
+    font-size: 1.5em;    
+}
+.service-included{
+    color:#E6E6E6;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.service-title{
+    color: #1A1A1A;
+    font-size: 1.5em;
+}
+
+.service-hr{
+    height: 2px !important;
+    color: #F6921E;
+    opacity: 100%;
+    width: 95%;
+}
+
+.light-background span{
+    font-size: 1.5em;
+    color: #1A1A1A;
 }
 .bullet{
     width: 10%;
@@ -137,8 +237,16 @@ aside div{
     margin-left: 3em;        
     background-color: #F6921E;
     width: 30%;        
-    text-align: center;
-    
+    text-align: center;    
+}
+.aside-mb{
+    display:block;
+}
+.aside-dk{
+    display: none;
+}
+.aside-dk2{
+    display: none;
 }
 .comas{
     font-size: 15em;
@@ -146,7 +254,7 @@ aside div{
 }
 
 .bg-1{  
-    background: url('../img/backgrounds/estudio_3.jpg') no-repeat center center ;    
+    background: url('../img/backgrounds/estudio_3.jpg') no-repeat center center fixed;    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -209,18 +317,168 @@ footer .first-section p{
     font-size: 1.3em !important;
 }
 
+.bg-orange{
+    background-color: #F6921E;
+  }
+
+.icon-footer{
+    font-size: 2em;
+  }
+  
+.title-over-orange{
+    color: #000;
+    font-size: 4em;
+}
+.sub-title{
+    color: #000 !important;
+
+}
+  .icon-footer a{
+    text-decoration: none;    
+  }
+  
+
+.google-map{
+    width: 200px;
+    height: 225px;
+  }
+
+  
+.bg-lockout{  
+    background: url('../img/mis/drumset.jpg') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .bg-lockout-plus{  
+    background: url('../img/mis/studio.JPG') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-grab-ses{  
+    background: url('../img/mis/grab.JPG') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-ls{  
+    background: url('../img/mis/live.JPG') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-gbc{  
+    background: url('../img/mis/gbc.JPG') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg-gbc-plus{  
+    background: url('../img/mis/gbc+.JPG') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  .bg-mic{      
+    background: url('../img/logos/micwhite.png') no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  
+@media (min-width: 576px) {     
+
+    .google-map{
+      width: 380px;
+      height: 315px;
+    }
+}  
+
+
 @media (min-width: 768px) { 
     .navbar ul{    
         font-size: 2em;    
     }
+
+    .service-price{
+        color: #E6E6E6;
+        font-size: 2em;
+    }
+    
+
+    .google-map{
+        width: 360px;
+        height: 295px;
+      }
+
+      .header-mobile{
+        display: none;
+        
+    }
+    .h-100{
+        display: flex;
+
+    }
+
+    .aside-mb{
+        display: none;        
+    }
+    .aside-dk{
+        
+        display:block;
+    }
+    .aside-dk2{
+        
+        display:flex;
+    }
+   
+      
 }
 
 @media (min-width: 992px) { 
+
+    
+    .light-background span{
+        font-size: 2.0em;
+    }
+
+    .title-main{            
+        font-size: 3em;        
+    }
+
+    .service-price{        
+        font-size: 3em;
+    }
+    
+    .google-map{
+        width: 450px;
+        height: 300px;
+      }
+    
     .navbar-logo{
         width: 35%;
         display: inline-block;
         
     }
+    .navbar-logo-mb{
+        display: inline-block;            
+    }
+    
     .navbar ul{     
         font-size: 1.5em;
         padding-left: 60px;
@@ -228,10 +486,43 @@ footer .first-section p{
     .dropdown-menu li{        
         font-size: 0.8em;
     }
+    .service-title{
+        font-size: 3em;
+    }
     
 }
 
+@media (min-width: 1024px) {
+
+    .light-background span{
+        font-size: 2.5em;
+    }
+  
+
+    .google-map{
+      width: 450px;
+      height: 350px;
+    }
+}
+
+
 @media (min-width: 1200px){
+    .light-background span{
+        font-size: 3.0em;
+    }
+
+    .title-main{
+        position:relative;
+        padding-top: 0.5%;    
+        font-size: 4em;
+        line-height: 90%;
+    }
+
+    .google-map{
+        width: 600px;
+        height: 450px;
+      }
+
     .nav-link{
         padding-left: 25px !important;   
         padding-right: 25px !important;  
@@ -249,6 +540,12 @@ footer .first-section p{
 
 
 @media (min-width: 1400px){
+
+    .title-main{        
+        font-size: 5em;
+        
+    }
+
     .navbar-logo{
         width: 35%;
         display: inline-block;

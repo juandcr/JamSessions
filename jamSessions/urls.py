@@ -16,10 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as coreViews
+from gallery import views as galleryViews
+from contact import views as contactViews
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls)
     ,path('',coreViews.home,name='home')
     ,path('nosotros',coreViews.about,name='about')
     ,path('servicios',coreViews.services,name='services')
+    ,path('galeria',galleryViews.gallery,name='gallery')
+    ,path('contacto',contactViews.contacto,name='contact')
 ]
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,80 @@
+{% extends 'core/base.html' %}
+{% block title %}Galeria{% endblock title %}
+{% load static %}
+{% block extra-css %}<link href="{% static 'gallery/css/gallery.css' %}" rel="stylesheet">{% endblock %}
+
+{% block content %}    
+    
+
+    <div class="container-header mb-5 aside-dk2">
+        <div class="rectangle-header text-center">
+            <p class="title-main">GALERÍA <br> UN DÍA EN JAM SESSIONS</p>      
+        </div>
+    </div>
+
+
+    <div class="container aside-mb">  
+        <p class="title-main basic-wrapper p-5 text-center">GALERÍA <br> UN DÍA EN JAM SESSIONS </p>            
+    </div>
+
+
+    <br>
+    
+    
+    {% if  renderGallery %}
+    <seccion class="g-row  mt-3 light-background">
+        <div class="g-column mb-2">
+            {% for foto in grid1 %}
+                <a href={{foto.image.url}} data-lightbox="image"><img class="frame img-fluid py-2 px-2" style="background-image: url('{{foto.image.url}}')"></a>
+            {% endfor %}
+        </div>        
+        <div class="g-column mb-2">
+            {% for foto in grid2 %}
+                <a href={{foto.image.url}} data-lightbox="image"><img class="frame img-fluid py-2 px-2" style="background-image: url('{{foto.image.url}}')"></a>
+            {% endfor %}
+        </div>
+        <div class="g-column mb-2">
+            {% for foto in grid3 %}
+                <a href={{foto.image.url}} data-lightbox="image"><img class="frame img-fluid py-2 px-2" style="background-image: url('{{foto.image.url}}')"></a>
+            {% endfor %}
+        </div>
+        <div class="g-column mb-2">
+            {% for foto in grid4 %}
+                <a href={{foto.image.url}} data-lightbox="image"><img class="frame img-fluid py-2 px-2" style="background-image: url('{{foto.image.url}}')"></a>
+            {% endfor %}
+        </div>        
+    </seccion>
+    {% else %}
+        <div class="container text-center">
+            <h1 class=""> Galería vacía </h1>
+        </div>
+    {% endif %}
+
+    <div class="container-fluid">        
+        <div class="row  mt-4">        
+            <div class="col-sm-12 col-md-2 mt-5">
+                <aside class="aside-dk">
+                    <div>
+                        <h1>JAM SESSIONS <br>STUDIO ES:</h1>
+                    </div>
+                </aside>                      
+                <div class="aside-mb text-center basic-wrapper "> 
+                    <h1>JAM SESSIONS <br>STUDIO ES:</h1>
+                </div>               
+            </div>
+            <div class="col-sm-12 col-md-1 aside-dk">
+                <h1 class="comas mt-3">,,</h1>
+            </div>
+            <div class="col-sm-12 col-md-9 mt-5 p-5">
+                <h1>In posuere mauris vitae mi pharetra blandit. Mauris congue lacus ipsum, in egestas ex fringilla a. Suspendisse nec porta elit, facilisis tincidunt nisi. Pellentesque quis arcu venenatis, accumsan eros fermentum, euismod ex. Sed lobortis metus finibus semper posuere. In eget fermentum lacus. Proin et risus eget nibh aliquet malesuada ut nec nisl. Etiam vehicula id urna eget sollicitudin. Morbi quis urna gravida risus tincidunt fringilla.</h1>                
+            </div>        
+            
+        </div>
+    </div>
+
+    
+   
+    {% include 'core/contact_us.html' %}
+
+
+{% endblock content %}
