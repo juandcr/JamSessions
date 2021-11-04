@@ -4,14 +4,14 @@ from .models import Testimonio,RedSocial,Texto
 
 
 def home (request):
-    """testimonios= Testimonio.objects.all()
-    encabezado1= Texto.objects.get(name="Encabezado1")
+    testimonios= Testimonio.objects.all()
+    """encabezado1= Texto.objects.get(name="Encabezado1")
     texto1= Texto.objects.get(name="Texto1")
     encabezado2= Texto.objects.get(name="Encabezado2")
     """
 
     context={
-        'testimonios':'',
+        'testimonios':testimonios,
         'encabezado1':'',
         'encabezado2':'',
         'texto1':'',

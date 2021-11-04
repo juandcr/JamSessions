@@ -68,25 +68,34 @@
             </div>
 
         </div>
-        <div class="col-sm-12 col-md-1">
-            <h1 class="comas mt-3 aside-dk">,,</h1>
-        </div>
-        <div class="col-sm-12 col-md-9 mt-5 p-5">
-            <h1>In posuere mauris vitae mi pharetra blandit. Mauris congue lacus ipsum, in egestas ex fringilla a. Suspendisse nec porta elit, facilisis tincidunt nisi. Pellentesque quis arcu venenatis, accumsan eros fermentum, euismod ex. Sed lobortis metus finibus semper posuere. In eget fermentum lacus. Proin et risus eget nibh aliquet malesuada ut nec nisl. Etiam vehicula id urna eget sollicitudin. Morbi quis urna gravida risus tincidunt fringilla.</h1>
-            <p class="mt-5">-&nbsp; Juan Carlos Del Camino Rojas</p>
-        </div>        
-    </div>
-    <div class="row light-background">        
-        <div class="col-sm-12 col-md-2 mt-5">          
-        </div>
-        <div class="col-sm-12 col-md-1">
-            <h1 class="comas mt-3 aside-dk">,,</h1>
-        </div>
-        <div class="col-sm-12 col-md-9 mt-5 p-5">
-            <h1>In posuere mauris vitae mi pharetra blandit. Mauris congue lacus ipsum, in egestas ex fringilla a. Suspendisse nec porta elit, facilisis tincidunt nisi. Pellentesque quis arcu venenatis, accumsan eros fermentum, euismod ex. Sed lobortis metus finibus semper posuere. In eget fermentum lacus. Proin et risus eget nibh aliquet malesuada ut nec nisl. Etiam vehicula id urna eget sollicitudin. Morbi quis urna gravida risus tincidunt fringilla.</h1>
-            <p class="mt-5">-&nbsp; Sandra Anaid Velazquez Vazquez</p>
-        </div>        
-    </div>
+        {% for test in testimonios %}
+            {% if forloop.counter == 1 %}
+                <div class="col-sm-12 col-md-1">
+                    <h1 class="comas mt-3 aside-dk">,,</h1>
+                </div>
+                <div class="col-sm-12 col-md-9 mt-5 p-5">
+                    <h1>{{test.text}}</h1>
+                    <p class="mt-5">-&nbsp; {{test.testigo}}</p>
+                </div>   
+            </div>
+            {% else %}
+                <div class="row light-background">        
+                    <div class="col-sm-12 col-md-2 mt-5">          
+                    </div>
+                    <div class="col-sm-12 col-md-1">
+                        <h1 class="comas mt-3 aside-dk">,,</h1>
+                    </div>
+                    <div class="col-sm-12 col-md-9 mt-5 p-5">
+                        <h1>{{test.text}}</h1>
+                        <p class="mt-5">-&nbsp; {{test.testigo}}</p>
+                    </div>        
+                </div>
+
+            {% endif %}
+        {% endfor %}
+        
+    
+    
 
     <div class="row h-100 bg-1">
         <div class="col-12 ">
