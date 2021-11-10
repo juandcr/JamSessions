@@ -84,10 +84,24 @@
 
   </div>
   <div class="col-sm-12 col-md-4 mt-2 footer-contact">
-    <p ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; {{direccion.text}}</p>
-    <p><i class="fas fa-phone-volume"></i> &nbsp;&nbsp; {{numero.text}}</p>
-    <p><i class="fas fa-mobile-alt"></i> &nbsp;&nbsp; {{celular.text}}</p>
-    <p><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;{{correo.text}}</p>
+    {% if direccion != None %}              
+      <p ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; {{direccion.text}}</p>
+    {% endif %}
+    {% if numero != None %}              
+      <p><i class="fas fa-phone-volume"></i> &nbsp;&nbsp; {{numero.text}}</p>                              
+    {% endif %}
+
+    {% if celuar != None %}              
+      <p><i class="fas fa-mobile-alt"></i> &nbsp;&nbsp; {{celular.text}}</p>                              
+    {% endif %}
+    {% if correo != None %}              
+      <p><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;{{correo.text}}</p>                              
+    {% endif %}
+
+    
+    
+    
+    
 
     
   </div>
