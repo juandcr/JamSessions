@@ -68,27 +68,28 @@
 <div class="row mx-3 mx-n3 mt-3">
   <div class="col-sm-12 col-md-4 first-section">
     <span class="first-section-title">JAM SESSIONS</span>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate repellat, ab, repellendus quam culpa quos eius et ea unde ad rerum dicta ducimus nobis dolorum reiciendis, magni iste atque? Cupiditate.</p>
+    <p>{{footer.text}}</p>
     <p class="mt-4">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-tiktok"></i>
-      <i class="fab fa-whatsapp"></i>
+      {% for red in redes %}
+        <a href="{{red.url}}"><i class="{{red.icon}} px-3 mt-5"></i></a>
+      {% endfor %}            
     </p>
   </div>
   <div class="col-sm-12 col-md-4 text-center mt-2">
     <p class="spotify-footer-text mb-2">
       <i class="fab fa-spotify spotify-footer-icon"></i> 
-      &nbsp;&nbsp;&nbsp; Accede a nuestra playlist en Spotify para esucchar nuestros trabajos
+      &nbsp;&nbsp;&nbsp; Accede a nuestra playlist en Spotify para escuchar nuestros trabajos
     </p>
     <p class="mt-5">&copy; JAMSESSION2021</p>
 
   </div>
   <div class="col-sm-12 col-md-4 mt-2 footer-contact">
-    <p ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Calle Pte. 140, Nueva Vallejo II Secc, Gustavo A. Madero, 07750 Ciudad de México, CDMX</p>
+    <p ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; {{direccion.text}}</p>
+    <p><i class="fas fa-phone-volume"></i> &nbsp;&nbsp; {{numero.text}}</p>
+    <p><i class="fas fa-mobile-alt"></i> &nbsp;&nbsp; {{celular.text}}</p>
+    <p><i class="fas fa-envelope-square"></i>&nbsp;&nbsp;{{correo.text}}</p>
 
-    <p><i class="fas fa-phone-volume"></i> &nbsp;&nbsp; 55 55 55 55 55</p>
+    
   </div>
 
 </div>

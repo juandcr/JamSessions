@@ -6,11 +6,13 @@ def ctx_dict(request):
     correo=Texto.objects.filter(name="correo").first()
     celular= Texto.objects.filter(name="celular").first()
     direccion= Texto.objects.filter(name="dirección").first()
+    footer= Texto.objects.filter(name="footer").first()
     ctx={ 
         'redes': redes,
         'numero': numero,
         'correo':correo,
         'celular':celular,
         'direccion':direccion,
+        'footer':footer,
     }
     return ctx

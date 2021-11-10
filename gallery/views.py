@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from core.models import Texto
 from .models import Gallery
 # Create your views here.
 
@@ -7,6 +9,8 @@ def gallery(request):
     
     grid=[[],[],[],[]]
     renderGallery=photos.exists()
+    somos= Texto.objects.get(name="JamSomos")
+    
 
     while(photos.exists()):        
         count= (4,photos.count()) [photos.count()<4]
@@ -20,6 +24,7 @@ def gallery(request):
         'grid3':grid[2],
         'grid4':grid[3],
         'renderGallery':renderGallery,
+        'somos':somos
         
     }
     return render(request,'gallery/gallery.html',context)
