@@ -336,6 +336,10 @@ footer .first-section p{
   .icon-footer a{
     text-decoration: none;    
   }
+
+a:hover{
+    color: #F6921E;
+}
   
 
 .google-map{
